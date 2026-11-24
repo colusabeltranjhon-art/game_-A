@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JHON_B | Tarjeta Presentación</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="stage">
+  <section id="card" class="card" tabindex="0" aria-label="Tarjeta de presentación. Haz clic para voltear">
+    <div class="card-inner">
+      <article class="face front">
+        <div class="logo">GTA_BOGOTA</div>
+        <h1>JHON_B</h1>
+        <p class="role">Estudiante · Buscando startups</p>
+        <div class="data">
+          <p><span>Edad:</span> 27</p>
+          <p><span>País:</span> Colombia</p>
+          <p><span>Correo:</span> jhon.beltran.nino@pi.edu.co</p>
+        </div>
+        <p class="hint">Haz clic para jugar</p>
+      </article>
+
+      <article class="face back">
+        <h2>Memory Game</h2>
+        <p>Elige un grupo y adivina en qué tarjeta está el número.</p>
+
+        <div class="choices">
+          <button class="choice" data-set="low">Grupo 1<br><small>1, 2, 3, 4</small></button>
+          <button class="choice" data-set="high">Grupo 2<br><small>99, 77, 33, 11</small></button>
+        </div>
+
+        <div id="game" class="game hidden">
+          <div id="deck" class="deck"></div>
+          <p class="target">Número a adivinar: <strong id="target"></strong></p>
+          <p id="message" class="message"></p>
+          <button id="reset" class="reset hidden">Reiniciar</button>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
